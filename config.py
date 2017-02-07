@@ -8,3 +8,5 @@ lfm_password = "246133 vova"
 v_login= "89851906212"
 v_password = "228dicks228"
 app_id = "3697615"
+
+time_to_post=3 #hour per post

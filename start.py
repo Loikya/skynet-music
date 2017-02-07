@@ -2,6 +2,7 @@ import vkapi
 import time
 import random
 import lastfmapi
+import config
 from datetime import datetime
 
 standart_tag = ["Rock", "Hip-Hop", "Jazz", "Blues", "Dance", "Pop"]
@@ -78,7 +79,7 @@ def main():
     while(True):
         try:
             delta = datetime.now() - last_post_time
-            if(delta.total_seconds() > 180):
+            if(delta.total_seconds() > config.time_to_post*3600):
                 post()
                 last_post_time = datetime.now()
         except:
